@@ -6,14 +6,19 @@ $color: (
    cinza: #313030,
    branco: #f2f6f8,
    light-azul: #6b8be2,
-   input-cinza: #757171, //Bordas Principais section
-   card-borda: #e0d2d2 ,
-   azul-titulo: #2F50B5
+   input-cinza: #757171, // Bordas Principais section
+   card-borda: #e0d2d2,
+   azul-titulo: #2F50B5,
+   cinza-icon: #6c757d, // Cor icones 
+   cinza-iconidark: #59656F
 );
 
 @function color($color-name) {
    @return map-get($color, $color-name);
 }
+
+
+$ipadMin:782px;
 
 $desktop: 991px;
 
@@ -40,7 +45,7 @@ body {
 
    i {
       font-size: 24px;
-      color: color(laranja);
+      color: color(cinza-icon);
       font-family: 'Montserrat', sans-serif;
    }
 
@@ -85,7 +90,7 @@ body {
                   cursor: pointer;
                   text-transform: uppercase;
                   font-family: 'Montserrat', sans-serif;
-                  font-size: 13.5px;
+                  font-size: 13px;
                   font-weight: bold;
                   color: color(cinza);
                   
@@ -202,15 +207,14 @@ body {
       img {
          position: absolute;
          width: 400px;
-         opacity: 0.5;
+         opacity: 0.2;
          display: block;
          right: 20px;
-         //bottom: 80px;
       }
 
       h1 {
          margin: 30px 40px;
-         color: rgba(30, 140, 230, 0.973);//color(azul-titulo);
+         color: rgba(30, 140, 230, 0.973);
       }
 
       p {

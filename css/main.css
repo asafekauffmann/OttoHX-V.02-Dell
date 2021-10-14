@@ -21,7 +21,7 @@ body {
 
 body i {
   font-size: 24px;
-  color: #FC9109;
+  color: #6c757d;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -83,7 +83,7 @@ body header #navMenu01 nav ul li {
   cursor: pointer;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: bold;
   color: #313030;
 }
@@ -224,7 +224,7 @@ body #navMain {
 body #navMain img {
   position: absolute;
   width: 400px;
-  opacity: 0.5;
+  opacity: 0.2;
   display: block;
   right: 20px;
 }
