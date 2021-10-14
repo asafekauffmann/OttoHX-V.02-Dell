@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  overflow: hidden;
+  /* __Section--Header__ */
+  /* __Section--Profile__ */
+  /* __Section--Main__ overflow:hidden;*/
+  /* Final navMain*/
+}
+
+body i {
+  font-size: 24px;
+  color: #FC9109;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body p {
+  font-size: 15.5px;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  max-width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, right top, from(#2B2AFC), color-stop(#F6F6F6), color-stop(#F6F6F6), color-stop(#F6F6F6), color-stop(#F6F6F6), to(#F6F6F6));
+  background-image: linear-gradient(90deg, #2B2AFC, #F6F6F6, #F6F6F6, #F6F6F6, #F6F6F6, #F6F6F6);
+  margin-left: 232px;
+  -webkit-box-shadow: 7px 1px 10px;
+          box-shadow: 7px 1px 10px;
+}
+
+body header #navMenu01 {
+  min-height: auto;
+}
+
+body header #navMenu01 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header #navMenu01 nav img {
+  margin: auto 12px;
+  display: block;
+  line-height: 30px;
+}
+
+@media (max-width: 991px) {
+  body header #navMenu01 nav img {
+    margin: auto 8px;
+  }
+}
+
+body header #navMenu01 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+body header #navMenu01 nav ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  body header #navMenu01 nav ul li {
+    font-size: 11.5px;
+  }
+}
+
+body header #navMenu01 nav ul li a {
+  margin: 12px;
+  display: block;
+  line-height: 30px;
+}
+
+@media (max-width: 991px) {
+  body header #navMenu01 nav ul li a {
+    margin: 8px;
+  }
+}
+
+body header #navMenu01 nav ul li a i {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+@media (max-width: 991px) {
+  body header #navMenu01 nav ul li a i {
+    font-size: 15.5px;
+  }
+}
+
+body header #navMenu01 nav ul li:hover {
+  color: #FC9109;
+}
+
+body header #icon-log {
+  color: #2b2525;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 991px) {
+  body header #icon-log {
+    font-size: 15.5px;
+  }
+}
+
+body header #icon-log:hover {
+  color: #FC9109;
+}
+
+body #navProf {
+  position: absolute;
+  top: 0;
+  width: 230px;
+  height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f2f6f8;
+  border: 1px solid #e0d2d2;
+}
+
+body #navProf #cardOne {
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: conter;
+      -ms-flex-pack: conter;
+          justify-content: conter;
+  border-radius: 5px;
+  border: 1px solid #e0d2d2;
+}
+
+body #navProf #cardOne h3 {
+  margin-left: 5px;
+}
+
+body #navProf #cardOne .esfera {
+  margin-right: 5px;
+}
+
+body #navProf #cardTwo {
+  width: 200px;
+  height: auto;
+  display: block;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #e0d2d2;
+}
+
+body #navProf #cardTwo img {
+  margin: 15px auto;
+}
+
+body #navProf #cardTwo #colapseProfile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+body #navMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  height: 700px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  margin-left: 233px;
+  /* Final tabelaContainer*/
+}
+
+body #navMain img {
+  position: absolute;
+  width: 400px;
+  opacity: 0.5;
+  display: block;
+  right: 20px;
+}
+
+body #navMain h1 {
+  margin: 30px 40px;
+  color: rgba(30, 140, 230, 0.973);
+}
+
+body #navMain p {
+  margin-left: 40px;
+}
+
+body #navMain #testInput {
+  width: 200px;
+  height: 25px;
+  border: 1px solid #757171;
+  border-radius: 8px;
+  margin-left: 40px;
+}
+
+body #navMain .tableContainer {
+  position: relative;
+  height: 200px;
+  min-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+}
+
+body #navMain .tableContainer table, body #navMain .tableContainer tr {
+  min-width: 100%;
+  font-size: 14px;
+}
+
+body #navMain .tableContainer table #headerTable, body #navMain .tableContainer tr #headerTable {
+  color: #2F50B5;
+  font-weight: bold;
+}
+
+body #navMain .tableContainer table td, body #navMain .tableContainer tr td {
+  padding-left: 15px;
+  background-color: #eaf9fd;
+}
+
+/* Final Body*/
+/*# sourceMappingURL=main.css.map */

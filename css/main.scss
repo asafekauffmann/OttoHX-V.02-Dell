@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+$color: (
+   laranja: #FC9109,
+   azul: #2B2AFC,
+   cinza: #2b2525,
+   branco: #f2f6f8,
+   light-azul: #6b8be2,
+   input-cinza: #757171, //Bordas Principais section
+   card-borda: #e0d2d2 ,
+   azul-titulo: #2F50B5
+);
+
+@function color($color-name) {
+   @return map-get($color, $color-name);
+}
+
+$desktop: 991px;
+
+@mixin desktop {
+   @media (max-width: #{$desktop}) {
+      @content;
+   }
+}
+
+* {
+   margin: 0; 
+   padding: 0;
+   border-style: border-box;
+}
+
+body, html {
+   height: 100%;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   margin: 0;
+   overflow:hidden;
+
+   i {
+      font-size: 24px;
+      color: color(laranja);
+      font-family: 'Montserrat', sans-serif;
+   }
+
+   p {
+      font-size: 15.5px;
+   }
+
+   /* __Section--Header__ */
+   header {
+      display: flex;
+      height: 50px;
+      max-width: 100%;
+      //word-wrap: break-word;
+      align-items: center;
+      justify-content: space-between;
+      background-image: linear-gradient(90deg, #2B2AFC, #F6F6F6, #F6F6F6, #F6F6F6, #F6F6F6, #F6F6F6);
+      margin-left: 232px;       
+      box-shadow: 7px 1px 10px color(cinza-borda);
+
+      #navMenu01 {
+         min-height: auto;
+
+         nav {
+            display: flex;
+
+            img {
+               margin: auto 12px;
+               display: block;
+               line-height: 30px;
+           
+               @include desktop {
+                  margin: auto 8px;
+               }
+            }
+
+            ul {
+               display: flex;
+               list-style: none;
+               text-decoration: none;
+   
+               li {
+                  cursor: pointer;
+                  text-transform: uppercase;
+                  font-family: 'Montserrat', sans-serif;
+                  font-size: 12px;
+                  font-weight: bold;
+
+                  @include desktop {
+                     font-size: 11.5px;
+                  }
+                  
+                  a {
+                     margin: 12px;
+                     display: block;
+                     line-height: 30px;
+
+                     @include desktop {
+                        margin: 8px;
+                     }
+   
+                     i {
+                        font-size: 16px;
+                        margin-right: 5px;
+
+                        @include desktop {
+                           font-size: 15.5px;
+                        }
+                     }
+                  }
+               }
+
+               li:hover {
+                  color: color(laranja);
+               }
+            }
+         } 
+      }
+
+      #icon-log {
+         color: color(cinza);
+         margin-right: 10px;
+         font-size: 16px;
+
+         @include desktop {
+            font-size: 15.5px;
+         }
+      }
+
+      #icon-log:hover {
+         color: color(laranja);
+      }
+
+   }
+
+   /* __Section--Profile__ */
+   #navProf {
+      position: absolute;
+      top: 0;
+      width: 230px;
+      height: 750px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: color(branco);
+      border: 1px solid color(card-borda);
+
+      #cardOne {
+         width: 200px;
+         height: 40px;
+         display: flex;
+         margin: 15px auto;
+         align-items: center;
+         justify-content: conter;
+         border-radius: 5px;
+         border: 1px solid color(card-borda);
+
+         h3 {
+            margin-left: 5px;
+         }
+   
+         .esfera {
+            margin-right: 5px;
+         }
+      }
+
+      #cardTwo {
+         width: 200px;
+         height: auto;
+         display: block;
+         text-align: center;
+         border-radius: 5px;
+         border: 1px solid color(card-borda);
+
+         img {
+            margin: 15px auto;
+         }
+
+         #colapseProfile {
+            display: flex;
+            justify-content: end;
+            margin-right: 20px;
+            margin-bottom: 5px;
+         }
+      }
+   }
+
+   /* __Section--Main__ overflow:hidden;*/
+   #navMain {
+      display: flex;
+      width: auto;
+      height: 700px;
+      flex-direction: column;
+      position: relative;
+      margin-left: 233px;
+
+      img {
+         position: absolute;
+         width: 400px;
+         opacity: 0.5;
+         display: block;
+         right: 20px;
+         //bottom: 80px;
+      }
+
+      h1 {
+         margin: 30px 40px;
+         color: rgba(30, 140, 230, 0.973);//color(azul-titulo);
+      }
+
+      p {
+         margin-left: 40px;
+      }
+
+      #testInput {
+         width: 200px;
+         height: 25px;
+         border: 1px solid color(input-cinza);
+         border-radius: 8px;
+         margin-left: 40px;
+      }
+
+
+      .tableContainer {
+         position: relative;
+         height: 200px;
+         min-width: 80%; // Only way to stop table and dont explode in small desktop
+         display: flex;
+         margin: 30px;
+ 
+         table, tr {
+            min-width: 100%;
+            font-size: 14px;
+            
+             #headerTable {
+               color: color(azul-titulo);
+               font-weight: bold;
+            }
+   
+            td {
+               padding-left: 15px;
+               background-color: rgb(234, 249, 253);
+            }  
+         }
+
+      }/* Final tabelaContainer*/
+
+      
+
+
+   } /* Final navMain*/ 
+
+
+}/* Final Body*/
